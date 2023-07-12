@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
    <style>
+    body{
+      font-family: sans-serif;
+    }
     header {
       display: flex;
       justify-content: space-between;
@@ -22,27 +25,73 @@
     
     .navigation {
       display: flex;
+      float:right;
+      margin-top: -25px;
+      
     }
     
     .navigation a {
-      margin-left: 10px;
+      margin-right: 10px;
       color: black;
       text-decoration: none;
     }
     .tsection{
-        background-color: blue;
+        margin-top: 10px;
+        padding: 25px;
+        text-align: center;
+        background-color: rgb(45, 45, 237);
+        height: 50%;
+        width:100%
+    }
+  
+    #esta{
+       vertical-align: top;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border:none;
+        align-items: center;
+        background-color: #FFDF8C;
+        color:black;
+        
+        
+    }
+    #coupons{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20%;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border:none;
+        align-items: center;
+        background-color: #FFDF8C;
+        color:black
+        
+    }
+    .bsection{
+
+      text-align: center;
+      margin-top: 100px;
+    }
+    .main{
+      font-size: 24px;
+        color:white
+      
     }
     .sub{
-        color:black
-    }
-    .tsection{
-        text-align: center;
-    }
-    .buttons{
-        background-color: ffdf8c;
-        border-radius: 30%;
-        text-align: center;
-
+      font-weight: bold;
+      font-size: 20px;
+      margin-top :-50px; 
     }
    </style>
 </head>
@@ -55,20 +104,21 @@
           <a href="#">Home</a>
           <a href="#">Services</a>
           <a href="#">Coupons</a>
+          <a href="#">Log In/Sign Up</a>
         </div>
       </div>
     
-    <div class = tsection>
-        <h2>Maximize your savings potential with our coupon-powered bank connections!</h2><br>
-        <div class = sub>
+    <div class = "tsection">
+        <div class = main>
+        <h2>Maximize your savings potential with<br> our coupon-powered bank connections!</h2><br>
+        </div>
+        <div class = "sub">
         <p>Get up to 25% discount coupons for all shops and restaurants in Singapore!</p>
         </div>
     </div>
-    <section class = bsection>
-    <div class = buttons>
-        <button id = "establishment">See all participating establishments</button>
-        <button id = "get coupons">Get coupons now</button>  
-    </div>
+    <section class = "bsection">
+        <button id="esta">See all participating<br> establishments</button>
+        <button id="coupons" buttons>Get coupons now</button>  
 </section>
 </body>
 </html>
