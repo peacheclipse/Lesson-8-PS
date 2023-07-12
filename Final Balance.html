@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WeBank</title>
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header h1 {
+      margin: 0;
+    }
+    
+    .header h1 span.we {
+      color: navy;
+    }
+    
+    .header h1 span.bank {
+      color: gold;
+    }
+    
+    .navigation {
+      display: flex;
+    }
+    
+    .navigation a {
+      margin-left: 10px;
+      color: black;
+      text-decoration: none;
+    }
+    
+    .center {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: 50px; /* Adjust the margin-bottom value for additional spacing */
+    }
+
+    .greeting {
+      margin: 0;
+      font-size: 20px;
+      background-color: rgb(51, 91, 212);
+      color: white;
+      padding: 40px;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    
+    .center .home-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: gold;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>
+      <span class="we">We</span><span class="bank">Bank</span>
+    </h1>
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Coupons</a>
+    </div>
+  </div>
+
+  <div class="center">
+    <p class="greeting">Welcome, Mr Sim!</p>
+    <p>&nbsp;</p> <!-- Add an empty paragraph for additional spacing -->
+    <p>&nbsp;</p> <!-- Add an empty paragraph for additional spacing -->
+    <p>Available Balance:</p>
+    <p>
+      <span class="balance">1,200</span>
+      <span class="currency">SGD</span>
+    </p>
+    <button class="home-button">Back to Home</button>
+  </div>
+</body>
+</html>
