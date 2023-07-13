@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body{
+      font-family: sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header h1 {
+      margin: 0;
+    }
+    
+    .header h1 span.we {
+      color: navy;
+    }
+    
+    .header h1 span.bank {
+      color: gold;
+    }
+    
+    .navigation {
+      display: flex;
+      float:right;
+      margin-top: -25px;
+      
+    }
+    
+    .navigation a {
+      margin-right: 10px;
+      color: black;
+      text-decoration: none;
+    }
+    .tsection{
+        margin-top: 10px;
+        padding: 25px;
+        text-align: center;
+        background-color: rgb(51, 91, 212);
+        height: 50%;
+        width:100%
+    }
+  
+    #esta{
+       vertical-align: top;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border:none;
+        align-items: center;
+        background-color: #FFDF8C;
+        color:black;
+    }
+    
+    .main{
+      font-size: 24px;
+      color:white;
+      margin-bottom: 20px;
+    }
+    .sub{
+      font-weight: bold;
+      font-size: 20px;
+      margin-top :-50px; 
+    }
+    .form-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .form-section .line {
+      width: 1px;
+      height: 100px;
+      background-color: black;
+      margin: 0 20px;
+    }
+    .form-section .login-section,
+    .form-section .signup-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-section input[type="text"],
+    .form-section input[type="password"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    .form-section button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .form-section .login-button {
+      background-color: #FFDF8C;
+      color: black;
+    }
+    .form-section .signup-button {
+      background-color: #FFDF8C;
+      color: black;
+    }
+   </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+          <span class="we">We</span><span class="bank">Bank</span>
+        </h1>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Coupons</a>
+          <a href="#">Login/Signup</a>
+        </div>
+    </div>
+    
+    <div class="tsection">
+        <div class="main">
+          <h2>Login/Signup</h2>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="login-section">
+          <h3>Login</h3>
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <button class="login-button">Login</button>
+        </div>
+        <div class="line"></div>
+        <div class="signup-section">
+          <h3>Sign Up</h3>
+          <input type="text" placeholder="Username">
+          <input type="password" placeholder="Password">
+          <button class="signup-button">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
