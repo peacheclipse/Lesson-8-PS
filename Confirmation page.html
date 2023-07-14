@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WeBank</title>
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header h1 {
+      margin: 0;
+    }
+    
+    .header h1 span.we {
+      color: navy;
+    }
+    
+    .header h1 span.bank {
+      color: gold;
+    }
+    
+    .navigation {
+      display: flex;
+    }
+    
+    .navigation a {
+      margin-left: 10px;
+      color:black;
+      text-decoration: none;
+    }
+    
+    .center {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: 50px; /* Adjust the margin-bottom value for additional spacing */
+    }
+    
+    .pageName {
+      margin: 0;
+      font-size: 50px;
+      background-color: rgb(51, 91, 212);
+      color: white;
+      padding: 50px;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .proceed{
+      margin: 0;
+      font-size: 20px;
+      background-color: rgb(51, 91, 212);
+      color: white;
+      padding: 50px;
+      width: 70%;
+      text-align:left;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 0;
+      left: 2;
+      border-right: 5px solid black;
+    }
+    
+    .coupons {
+      font-size: 30px;
+      font-weight: bold;
+      display: inline;
+    }
+
+    .br{
+      font-size: 100px;
+      font-weight: bold;
+      display: inline;
+    }
+    
+    .description {
+      font-size: 20px;
+      font-weight: bold;
+      display: inline;
+    }
+
+    .price{
+      margin: 0;
+      font-size: 20px;
+      color: black;
+      padding: 20px;
+      height: 460px;
+      width: 30%;
+      text-align:left;
+      box-sizing: border-box;
+      position: absolute;
+      top: 200px;
+      right: 0;
+      border-left: 5px solid black;
+      border-bottom: 5px solid black;
+    }
+
+    .grand{
+      margin: 0;
+      font-size: 20px;
+      color: black;
+      padding: 20px;
+      width: 30%;
+      text-align:left;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>
+      <span class="we">We</span><span class="bank">Bank</span>
+    </h1>
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Coupons</a>
+    </div>
+  </div>
+
+  <div>
+    <p class="pageName">Confirmation page</p>
+    <p>
+      <p class="coupons">Coupons:</p>
+      <br class="description">Selected Deal: KYS Restaurant ($20 voucher) x1 </br>
+    </p>
+  </div>
+
+<div>
+    <p class="proceed">Proceed</p>
+</div>
+
+<div>
+  <p class="price">Price: $16</p>
+</div>
+
+<div>
+  <p class="grand">Grand Total: $16</p>
+</div>
+
+</body>
+</html>
