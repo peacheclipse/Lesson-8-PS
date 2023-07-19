@@ -120,10 +120,10 @@
           <span class="we">We</span><span class="bank">Bank</span>
         </h1>
         <div class="navigation">
-          <a href="#">Home</a>
+          <a href="homepage.html">Home</a>
           <a href="#">Services</a>
-          <a href="#">Coupons</a>
-          <a href="#">Login/Signup</a>
+          <a href="Coupon_Page.html">Coupons</a>
+          <a href="Login signup.html">Login/Signup</a>
         </div>
     </div>
     
@@ -134,19 +134,23 @@
     </div>
 
     <div class="form-section">
-        <div class="login-section">
-          <h3>Login</h3>
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
-          <button class="login-button">Login</button>
-        </div>
-        <div class="line"></div>
-        <div class="signup-section">
-          <h3>Sign Up</h3>
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
-          <button class="signup-button">Sign Up</button>
-        </div>
+      <div class="login-section">
+        <h3>Login</h3>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button class="login-button" onclick="loginSuccessful()">Login</button>
+      </div>
+      <div class="line"></div>
+      <div class="signup-section">
+        <h3>Sign Up</h3>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button class="signup-button" onclick="signupSuccessful()">Sign Up</button>
+      </div>
     </div>
+
+    
+    <script src="login signup.js"></script>
+    
 </body>
 </html>
