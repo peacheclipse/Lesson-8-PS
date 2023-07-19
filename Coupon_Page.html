@@ -1,189 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <style>
-    body{
+  <style>
+    body {
       font-family: sans-serif;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    
+
     .header h1 {
       margin: 0;
     }
-    
+
     .header h1 span.we {
       color: navy;
     }
-    
+
     .header h1 span.bank {
       color: gold;
     }
-    
+
     .navigation {
       display: flex;
-      float:right;
+      float: right;
       margin-top: -25px;
-      
+
     }
-    
+
     .navigation a {
       margin-right: 10px;
       color: black;
       text-decoration: none;
     }
-    .tsection{
-        margin-top: 10px;
-        padding: 50px;
-        text-align: center;
-        background-color: rgb(51, 91, 212);
-        height: 500px;
-        width: 100%;
-        background-position: center;
+
+    .tsection {
+      margin-top: 10px;
+      padding: 50px;
+      text-align: center;
+      background-color: rgb(51, 91, 212);
+      height: 500px;
+      width: 100%;
+      background-position: center;
     }
-  
-    #esta{
-        vertical-align: top;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-radius: 15%;
-        font-size: 30px;
-        font-weight: bold;
-        cursor: pointer;
-        border:none;
-        align-items: center;
-        background-color: #FFDF8C;
-        color:black;
-        margin-right: 220px;
+
+    #esta {
+      vertical-align: top;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 15%;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      background-color: #FFDF8C;
+      color: black;
+      margin-right: 220px;
     }
-    #coupons{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 20%;
-        border-radius: 50px;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-        border:none;
-        align-items: center;
-        background-color: #FFDF8C;
-        color:black
+
+    #coupons {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 20%;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      background-color: #FFDF8C;
+      color: black
     }
-    .bsection{
+
+    .bsection {
       text-align: center;
       margin-top: 100px;
     }
-    .main{
+
+    .main {
       font-size: 24px;
-      color:white;
+      color: white;
       margin-top: 230px;
     }
-    .sub{
+
+    .sub {
       font-weight: bold;
       font-size: 20px;
-      margin-top :-50px; 
+      margin-top: -50px;
     }
-    img{
+
+    img {
       width: 30px;
       height: 30px;
       margin-top: -5px;
     }
-    h3{
+
+    h3 {
       font-size: 40px;
       font-weight: bold;
       margin-top: -50px;
       margin-left: 30px;
     }
-    #middle{
-        vertical-align: top;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-radius: 15%;
-        font-size: 30px;
-        font-weight: bold;
-        cursor: pointer;
-        border:none;
-        align-items: center;
-        background-color: #FFDF8C;
-        color:black;
-        margin-right: 20px;
+
+    #middle {
+      vertical-align: top;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 15%;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      background-color: #FFDF8C;
+      color: black;
+      margin-right: 20px;
     }
-    #right{
-        vertical-align: top;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-radius: 15%;
-        font-size: 30px;
-        font-weight: bold;
-        cursor: pointer;
-        border:none;
-        align-items: center;
-        background-color: #FFDF8C;
-        color:black;
-        margin-left: 200px;
+
+    #right {
+      vertical-align: top;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 15%;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      align-items: center;
+      background-color: #FFDF8C;
+      color: black;
+      margin-left: 200px;
     }
-    h2{
+
+    h2 {
       font-size: 40px;
       font-weight: bold;
       margin-right: 45px;
     }
-   </style>
+  </style>
 </head>
+
 <body>
-    <div class="header">
-        <h1>
-          <span class="we">We</span><span class="bank">Bank</span>
-        </h1>
-        <div class="navigation">
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Coupons</a>
-          <img src="account.png">
-        </div>
-      </div>
-    
-    <div class = "tsection">
-        <div class = main>
-        <h2>Participating establishments</h2>
-        </div>
+  <div class="header">
+    <h1>
+      <span class="we">We</span><span class="bank">Bank</span>
+    </h1>
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Coupons</a>
+      <img src="account.png">
     </div>
-    <section class = "bsection">
-      <h3>Hot Deals</h3>
-        <button id="esta">
-        <span class="name">KYS Restaurant</span><br>
-        <span class="amount" style="font-size: 80px; font-weight: bolder; color:#070564;">$20</span><br>
-        <span class="voucher" style="font-size: 25px; font-weight: bolder;">Voucher</span><br>
-        <span class="discount">20% Discount</span><br>
-        <span class="newprice">$16</span><br>
-        </button>
-        <button id="middle">
-          <span class="name">Brand ABC</span><br>
-          <span class="amount" style="font-size: 80px; font-weight: bolder; color:#070564;">$20</span><br>
-          <span class="voucher" style="font-size: 25px; font-weight: bolder;">Voucher</span><br>
-          <span class="discount">15% Discount</span><br>
-          <span class="newprice">$17</span><br>
-          </button>
-          <button id="right">
-            <span class="name">Mike Kawks</span><br>
-            <span class="amount" style="font-size: 80px; font-weight: bolder; color:#070564;">$20</span><br>
-            <span class="voucher" style="font-size: 25px; font-weight: bolder;">Voucher</span><br>
-            <span class="discount">15% Discount</span><br>
-            <span class="newprice">$17</span><br>
-            </button>
-</section>
+  </div>
+
+  <div class="tsection">
+    <div class=main>
+      <h2>Participating establishments</h2>
+    </div>
+  </div>
+  <section class="bsection">
+    <h3>Hot Deals</h3>
+    <button id="esta" onclick = "selectCoupon()">
+      <span class="name">KYS Restaurant</span><br>
+      <span class="amount" style="font-size: 80px; font-weight: bolder; color:#070564;">$20</span><br>
+      <span class="voucher" style="font-size: 25px; font-weight: bolder;">Voucher</span><br>
+      <span class="discount">20% Discount</span><br>
+      <span class="newprice">$16</span><br>
+    </button>
+    <button id="middle" onclick = "selectCoupon()">
+      <span class="name">Brand ABC</span><br>
+      <span class="amount" style="font-size: 80px; font-weight: bolder; color:#070564;">$20</span><br>
+      <span class="voucher" style="font-size: 25px; font-weight: bolder;">Voucher</span><br>
+      <span class="discount">15% Discount</span><br>
+      <span class="newprice">$17</span><br>
+    </button>
+    <button id="right" onclick = "selectCoupon()">
+      <span class="name">Mike Kawks</span><br>
+      <span class="amount" style="font-size: 80px; font-weight: bolder; color:#070564;">$20</span><br>
+      <span class="voucher" style="font-size: 25px; font-weight: bolder;">Voucher</span><br>
+      <span class="discount">15% Discount</span><br>
+      <span class="newprice">$17</span><br>
+    </button>
+  </section>
+  <script>
+    var selectedCoupon = null;
+    var selectedCouponPrice = null;
+    function selectCoupon(){
+      eventID = event.target;
+      if (eventID !== null) {
+        selectedCoupon = (eventID.querySelector(".name").innerHTML) + " (" + (eventID.querySelector(".amount").innerHTML) + " voucher)";
+        selectedCouponPrice = (eventID.querySelector(".newprice").innerHTML);
+        alert("You have selected " + selectedCoupon + " for " + selectedCouponPrice + "!");
+      }
+    }
+  </script>
 </body>
 </html>
