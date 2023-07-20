@@ -82,7 +82,17 @@
       <span class="balance">1,200</span>
       <span class="currency">SGD</span>
     </p>
-    <button class="home-button">Deduct from Account</button>
+    <button id="home-button" class="home-button">Deduct from Account</button>
   </div>
+
+<script>
+  function handleClick(){
+    alert('Are sure you want to make this purchase?');
+    document.getElementById('home-button').disabled = true;
+  }
+
+  document.getElementById('home-button').addEventListener('click', handleClick);
+</script>
+
 </body>
 </html>
