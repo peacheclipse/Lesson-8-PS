@@ -201,12 +201,17 @@
   <script>
     var selectedCoupon = null;
     var selectedCouponPrice = null;
+    var sharedObject = {};
     function selectCoupon(){
       eventID = event.target;
       if (eventID !== null) {
         selectedCoupon = (eventID.querySelector(".name").innerHTML) + " (" + (eventID.querySelector(".amount").innerHTML) + " voucher)";
         selectedCouponPrice = (eventID.querySelector(".newprice").innerHTML);
         alert("You have selected " + selectedCoupon + " for " + selectedCouponPrice + "!");
+        sharedObject.selectedCoupon = selectedCoupon;
+        sharedObject.selectedCouponPrice = selectedCouponPrice;
+        localStorage.setItem("sharedObject", JSON.stringify(sharedObject));
+        window.location.href = "Confirmation page.html?sharedObject=" + JSON.stringify(sharedObject);
       }
     }
   </script>

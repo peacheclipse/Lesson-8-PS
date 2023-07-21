@@ -133,7 +133,7 @@
     <p class="pageName">Confirmation page</p>
     <p>
       <p class="coupons">Coupons:</p>
-      <br class="description">Selected Deal: KYS Restaurant ($20 voucher) x1 </br>
+      <br class="description">Selected Deal: <span class="name"></span> x1</br>
     </p>
   </div>
 
@@ -142,12 +142,22 @@
 </div>
 
 <div>
-  <p class="price">Price: $16</p>
+  <p class="price">Price: <span class = "priceValue"></span></p>
 </div>
 
 <div>
-  <p class="grand">Grand Total: $16</p>
+  <p class="grand">Grand Total: <span class = "grandTotal"></span></p>
 </div>
+<script>
+  var sharedObject = JSON.parse(localStorage.getItem("sharedObject"));
 
+  var selectedCoupon = sharedObject.selectedCoupon;
+  var selectedCouponPrice = sharedObject.selectedCouponPrice;
+
+  document.querySelector(".name").innerHTML = selectedCoupon;
+  document.querySelector(".priceValue").innerHTML = selectedCouponPrice;
+  document.querySelector(".grandTotal").innerHTML = selectedCouponPrice;
+
+</script>
 </body>
 </html>
