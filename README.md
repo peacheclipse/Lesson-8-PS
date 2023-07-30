@@ -1,4 +1,4 @@
-# Lesson-9-PS
+# Lesson-8-PS
 Team 2 PS
 1. @peacheclipse
    - [x] `Coupon_Page_html`
