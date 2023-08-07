@@ -1,5 +1,3 @@
-</div>
-
 <script src = "Collection Page.js">
 function redirectToFinalBalance() {
   var isValidEmail = function2();
@@ -19,7 +17,7 @@ var email = emailinput.value;
 var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 }
 if (!emailRegex.test(email)) {
-alert('Please enter a valid email address.'){
+alert('Please enter a valid email address.');
 return false;
 
 }
